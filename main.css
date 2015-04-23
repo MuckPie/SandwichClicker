@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', serif;
+    color: white;
+    background-image: url(img/darknoise.jpg);
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sandwiches {
+    position: absolute;
+    left: 0px;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    z-index: 200;
+    background: rgba(222,222,222,0.4);
+    padding: 2px 0px;
+}
+
+.title {
+    font-family: 'Montserrat', serif;
+    font-size: 28px;
+    text-shadow: 0px 0px 4px #000;
+    color: #FFF;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.6cm;
+    cursor: pointer;
+}
+
+.product {
+    width: 300px;
+    height: 64px;
+    cursor: pointer;
+    background-color: black;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.content {
+    display: inline-block;
+    position: absolute;
+    left: 64px;
+    top: 6px;
+    right: 0px;
+    bottom: 6px;
+    padding: 4px;
+}
+
+.price {
+    font-weight: bold;
+    color: #6F6;
+    padding-left: 18px;
+    position: relative;
+}
+
+.price::before, .price:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    background: url(img/price.png);
+    width: 16px;
+    height: 16px;
+}
+
+.owned {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    font-size: 40px;
+    opacity: 0.2;
+    text-shadow: 0px 0px 8px #FFF;
+}
